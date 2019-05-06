@@ -9,6 +9,11 @@ From: bouthilx/flow:pytorch.1.0.0
 
 %post
     echo "------------------------------------------------------"
+    echo "Updating setuptools"
+    echo "------------------------------------------------------"
+    pip3 install 'setuptools>=v40.1.0'
+
+    echo "------------------------------------------------------"
     echo "Installing coco"
     echo "------------------------------------------------------"
     pip3 install numpy scipy
@@ -21,7 +26,6 @@ From: bouthilx/flow:pytorch.1.0.0
     echo "------------------------------------------------------"
     echo "Installing mahler"
     echo "------------------------------------------------------"
-
     pip3 install --upgrade git+https://github.com/bouthilx/mahler.git
     pip3 install --upgrade git+https://github.com/bouthilx/mahler.registry.mongodb.git
 
@@ -40,7 +44,6 @@ From: bouthilx/flow:pytorch.1.0.0
     echo "------------------------------------------------------"
     echo "Installing repro"
     echo "------------------------------------------------------"
-    pip3 install 'setuptools>=v40.1.0'
     pip3 install --process-dependency-links -e repro[coco]
 
     echo "------------------------------------------------------"
