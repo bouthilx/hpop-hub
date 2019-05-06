@@ -22,8 +22,8 @@ From: bouthilx/flow:pytorch.1.0.0
     echo "Installing mahler"
     echo "------------------------------------------------------"
 
-    pip install --upgrade git+https://github.com/bouthilx/mahler.git
-    pip install --upgrade git+https://github.com/bouthilx/mahler.registry.mongodb.git
+    pip3 install --upgrade git+https://github.com/bouthilx/mahler.git
+    pip3 install --upgrade git+https://github.com/bouthilx/mahler.registry.mongodb.git
 
     echo "------------------------------------------------------"
     echo "Fetching repro"
