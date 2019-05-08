@@ -45,7 +45,7 @@ From: bouthilx/flow:pytorch.1.0.0
     echo "------------------------------------------------------"
     echo "Installing repro"
     echo "------------------------------------------------------"
-    pip3 install --process-dependency-links -e repro[coco]
+    pip3 install --process-dependency-links -e repro[coco,mini]
 
     echo "------------------------------------------------------"
     echo "Cleaning up"
